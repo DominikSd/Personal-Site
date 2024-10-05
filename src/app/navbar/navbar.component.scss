@@ -1,0 +1,37 @@
+nav {
+  background-color: rgb(0, 132, 209);
+  padding: 10px;
+  position: fixed; /* Pasek będzie na stałe przyklejony do górnej części okna */
+  top: 0;
+  width: 100%; /* Rozciągnij pasek na pełną szerokość ekranu */
+  z-index: 1000; /* Ustaw wysoki z-index, aby pasek był nad innymi elementami */
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  margin-right: 20px;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: block;
+  font-size: 20px;
+  font-style:oblique;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+body {
+  padding-top: 60px; /* Dodaj margines górny do treści, aby pasek nie zasłaniał jej */
+}

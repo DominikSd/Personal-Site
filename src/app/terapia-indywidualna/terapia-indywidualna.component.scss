@@ -1,0 +1,130 @@
+// Hero Section
+.hero {
+  background-image: url('/assets/images/brain.jpg'); // Ścieżka do obrazka
+  background-size: cover;
+  background-position: center;
+  height: 600px; /* Ustal wysokość sekcji */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(230, 230, 230);
+  font-size: 30px;
+
+  .hero-content {
+    background-color: rgba(0, 0, 0, 0.815); /* Ciemny przezroczysty tle dla lepszej czytelności */
+    padding: 20px;
+    border-radius: 10px;
+  }
+}
+
+// Section Styles
+.section {
+  padding: 40px;
+  margin: 100px 0;
+  border-radius: 10px;
+  background-color: #b4e9e9; /* Delikatny kolor tła dla sekcji */
+}
+
+
+// Headings
+h1, h2 {
+  font-size: 35px; /* Większa czcionka dla nagłówków */
+  margin-bottom: 20px;
+  font-style: italic;
+
+}
+
+// Benefit and Info Items
+.benefits-section {
+  display: grid; /* Użycie gridu do organizacji elementów */
+  grid-template-columns: auto 1fr; /* Dwie kolumny: jedna dla obrazka, druga dla tekstu */
+  gap: 20px; /* Odstęp między kolumnami */
+  align-items: flex-start; /* Wyrównanie do górnej krawędzi */
+  margin: 20px 0; /* Odstęp między sekcjami */
+}
+
+.benefit-icon {
+  width: 100%; /* Ustaw szerokość obrazka na 100% kontenera */
+  max-width: 300px; /* Maksymalna szerokość dla obrazka */
+  height: auto; /* Automatyczna wysokość dla zachowania proporcji */
+  grid-column: 1; /* Umieść obrazek w pierwszej kolumnie */
+}
+
+.benefit-items {
+  display: flex; /* Użycie flexbox do układu ikon i tekstu */
+  flex-direction: column; /* Układ pionowy */
+  grid-column: 2; /* Umieść elementy tekstowe w drugiej kolumnie */
+}
+
+.benefit-item {
+  background-color: #f9f9f9; /* Delikatne tło dla wyróżnienia */
+  padding: 20px; /* Padding dla lepszej estetyki */
+  border-radius: 10px; /* Zaokrąglone rogi */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Cień dla efektu głębi */
+  margin-bottom: 30px; /* Odstęp między punktami */
+  font-size: 20px;
+}
+
+
+
+.benefits-section > .benefit-icon {
+  grid-row: 1; /* Obrazek w pierwszym wierszu */
+}
+
+.benefits-section > .benefit-item {
+  grid-row: span 1; /* Każdy punkt zajmuje jeden wiersz */
+}
+
+
+
+.text-content {
+  flex: 1; /* Pozwala tekstowi zająć resztę dostępnej przestrzeni */
+}
+
+.text-content h3 {
+  font-size: 24px; /* Większa czcionka dla nagłówka */
+  margin-bottom: 10px; /* Odstęp pod nagłówkiem */
+}
+
+.text-content ul {
+  list-style-type: disc; /* Wypunktowanie dla listy */
+  margin-left: 20px; /* Odstęp dla wypunktowanej listy */
+}
+
+// Icons
+.benefit-item i {
+  margin-right: 10px; /* Odstęp między ikoną a tekstem */
+  color: #3498db; /* Kolor ikony */
+  font-size: 24px; /* Rozmiar ikony */
+}
+
+.info-icon, .bullet-icon {
+  width: 500px; /* Szerokość ikon */
+  height: auto; /* Automatyczna wysokość dla zachowania proporcji */
+  margin-right: 15px; /* Odstęp między obrazkiem a tekstem */
+  border-radius: 50%; /* Zaokrąglone rogi dla ikonki */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Cień pod obrazkiem */
+}
+
+// List Styles
+ul {
+  list-style-type: none; /* Usunięcie domyślnych kropek listy */
+  padding: 0; /* Usunięcie domyślnego paddingu */
+}
+
+// Contact Button
+.contact-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #2980b9; /* Przyciemnienie koloru po najechaniu */
+  }
+}

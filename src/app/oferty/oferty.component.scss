@@ -1,0 +1,39 @@
+.section {
+  padding: 40px;
+  color: white;
+  text-align: center;
+}
+
+.section-one {
+  background-color: #3498db;  // Niebieski
+}
+
+.section-two {
+  background-color: #2ecc71;  // Zielony
+}
+
+.section-three {
+  background-color: #e74c3c;  // Czerwony
+}
+
+h2 {
+  font-size: 36px; // Większa czcionka dla nagłówków
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 20px; // Zwiększona czcionka dla treści
+}
+
+ul li {
+  margin: 15px 0;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1); // Przezroczyste tło
+  border-radius: 10px;
+}
